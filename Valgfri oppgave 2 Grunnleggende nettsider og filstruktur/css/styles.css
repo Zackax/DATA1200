@@ -1,0 +1,58 @@
+nav > ul.meny > li{
+    list-style: none;
+    display: inline;
+}
+a
+{
+    color:black;    
+    text-decoration: none;
+}   
+button{
+    border:none;
+    border-radius: 2px;
+    background-color: rgb(52, 116, 48);
+    color:white;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.meny-knapp{
+    margin-right: 8px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+.main-container {
+  padding: 10px; /* valgfritt, for litt luft rundt */
+}
+
+.main-content {
+    display: flex;
+   /* slik at de bryter på små skjermer */
+}
+
+.main-content article {
+  flex: 1 1 50%;     /* 50% bredde */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.main-content aside {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.papegoye {
+  max-width: 100%;
+  height: auto;  
+}
+@media only screen and ( max-width: 200px){
+    .main-container{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+

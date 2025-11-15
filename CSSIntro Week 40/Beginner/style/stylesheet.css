@@ -1,0 +1,56 @@
+body {
+
+}
+article{
+
+}
+h1{
+    
+}
+h2{
+    
+}
+p {
+    
+}
+thead > tr {
+ 
+}
+tr:nth-child(even) {
+
+}
+## Generalized classes
+.center{
+
+}
+## Specialized classes
+.hero-text {
+
+}
+.hero-text > p {
+
+}
+.portrait {
+
+}
+.disclaimer {
+
+}
+.story {
+
+}
+.story h2 {
+
+}
+.story p {
+
+}
+.painting-article {
+    
+}
+.painting-table{
+
+}
+.painting-table, th, td{
+
+}

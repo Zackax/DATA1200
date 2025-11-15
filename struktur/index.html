@@ -1,0 +1,153 @@
+<html>
+<head>
+	<title>HTML Structure with Sections</title>
+
+	<style>
+	* {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	header {
+		width: 800px;
+		background: navy;
+		margin: auto;
+		text-align: center;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+
+	nav a {
+		color: white;
+		font-size: 24px;
+		text-decoration: none;
+		padding: 20px;
+		display: block;
+	}
+
+	nav a:hover {
+		background-color: aqua;
+		text-decoration: underline;
+		color: black;
+	}
+
+	main {
+		width: 800px;
+		margin: auto;
+	}
+
+	.main-content {
+		width: 500px;
+		height: 400px;
+		background-color: #FE9301;
+		float: left;
+	}
+
+	aside {
+		width: 250px;
+		height: 400px;
+		background-color: yellow;
+		float: right;
+	}
+	
+	.clearfix {
+		clear: both;
+		float: none;
+		margin: auto;
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+	
+	.extra-information {
+		background-color: #00A89D;
+		padding: 20px;
+	}
+
+	#footer {
+		width: 770px;
+		margin: auto;
+		padding: 15px;
+		background: navy;
+		text-align: center;
+	}
+
+	#footer a {
+		color: #fff;
+		font-size: 24px;
+		text-decoration: none;
+		padding: 20px;
+	}
+
+	img {
+		width: 200px;
+	}
+	</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html" class="link">Menu 1</a></li>
+				<li><a href="https://oslomet.no" target="_blank">Menu 2</a></li>
+				<li><a href="#footer">Menu 3</a></li>
+				<li><a href="#">Menu 4</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="main-content">
+			<h1>Main section to get attention</h1>
+		</section>
+		
+		<aside>
+			<h2>Extra information/media</h2>
+			<img src="../media/image.jpg" alt="Placeholder image" />
+		</aside>
+		<div class="clearfix"></div>
+
+		<section class="extra-information">
+			<h3><center>if you want more information</center></h3>
+
+			<p>Students in <span class="highlighted">OsloMet</span> are amazing</p>	
+			<p>They are very hardworking</p>	
+
+			<div>Students in Oslomet are amazing</div>
+			<div>They are very hardworking</div>
+
+			<span>Students in Oslomet are amazing</span>
+			<span>They are very hardworking</span>	
+
+			
+			<ul class="list">
+				<li>Hepatica</li>
+				<li>Crocus</li>
+				<li>
+					<ul>
+						<li>Also known as:</li>
+						<li>
+							<ul>
+								<li>ABC</li>
+								<li>DEF</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+		</section>
+
+	</main>
+
+
+	<footer id="footer">
+		<a href="about.html">About us</a>
+		<a href="contact.html">Contact us</a>
+		<a href="address.html">Address</a>
+	</footer>
+</body>
+</html>

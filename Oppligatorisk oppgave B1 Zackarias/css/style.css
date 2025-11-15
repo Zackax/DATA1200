@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    margin-top: 20px;
+    background-color: azure;
+}
+nav{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+nav ul li{
+    display: inline;
+}
+#theme-change{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(99, 160, 95);
+    border-radius: 10px;
+    transition: 0.10s;
+    display: inline-block;
+    border:none;
+    font-size: 17px;
+}
+a{
+    color: white;
+}
+
+.hoved-meny a{
+    text-decoration: none;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(99, 160, 95);
+    border-radius: 10px;
+    transition: 0.10s;
+    display: inline-block;
+    margin-top: 10px;
+}
+.hoved-meny a:hover{
+    background-color: rgb(25, 62, 28);
+    color: white;
+    opacity: 1;
+    transition: 0.10s;
+}
+.hoved-meny a:active{
+    color:azure;
+    background-color: rgb(15, 52, 12);
+    transition:0.10s;
+}
+
+header{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+main{
+    background-color: lightgray;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.main-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(255, 224, 202);
+    display: flex;
+    border:solid black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main-content{
+    background-color: rgb(248, 169, 113);
+    display: flex;
+
+}
+aside{
+    background-color: rgb(81, 255, 255);
+    height: 200px;
+
+}
+.arapapegoye{
+    object-position: right;
+}
+.fugler{
+    font-size: 20px;
+    text-align: center;
+}
+img{
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.om-meg{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(255, 224, 202);
+    display: flex;
+    border:solid black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.dark-theme-body{
+    background-color: rgb(43, 43, 120);
+}
+.dark-theme-main-container{
+   background-color: rgb(46, 31, 21);
+   border-color: rgb(255, 255, 255);
+}
+
+.white-text{
+    color: white;
+}
+.black-text{
+    color: black;
+}
+

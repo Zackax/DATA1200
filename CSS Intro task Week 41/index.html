@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selector Cafe</title>
+</head>
+<body>
+    <header>
+        <h1>Selector Cafe</h1>
+        <p>En rykende</p>
+        <h2>god kaffe</h2>
+        <nav>
+            <ul class="menu smallcaps">
+                <li><a href="/index.html">Hjem</a></li>
+                <li><a href="#features">Meny</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="feature">
+            <p id="welcome">Welcome to Selector Cafe</p>
+        </section>
+        <section class="menu-section">
+            <ul>
+                <li class="highlight note">Kaffelatte</li>
+                <li>Svart Kaffi</li>
+                <li>Mokka</li>
+                <li>Varm kakao</li>
+                <li>Expresso</li>
+            </ul>
+        </section>
+        <!-- test område  -->
+        <section>
+            <p id="feature">Test1</p>
+            <!-- inline style har en høyere 
+             prioritet enn vanlig stylesheet som kan sees som 1-0-0-0
+             som har en høyere kollone verdi som teller fra høyere
+             --->
+            <p class="highlight" style="color: orange;">Test2</p>
+            <p>Test3</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2025</p>
+    </footer>
+</body>
+</html>

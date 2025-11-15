@@ -1,0 +1,100 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    width: 900px;
+    margin: auto;
+}
+body{
+    background-color: burlywood;
+}
+header{
+    width: 900px;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    background: rgb(222, 183, 66);
+    padding-top:25px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+}
+nav ul li {
+    list-style: none;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(155, 185, 79);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    color: black;
+}
+a:hover{
+    background-color: cadetblue;
+    color: burlywood;
+}
+.main-content{
+    border-radius: 40px;
+    background-color:rgb(191, 146, 88);
+    padding: 25px;
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+aside{
+    width: 250px;
+    height: 400px;
+    padding: 25px;
+    border-radius: 40px;
+    background-color:rgb(255, 142, 71) ;    
+    float:right;
+}
+.clearfix{
+    clear: both;
+    float: none;
+    margin: auto;
+}
+#prosjekt{
+    border-radius: 40px;
+    margin-top: 15px;
+    background-color: rgb(187, 125, 44) ;
+    padding: 20px;
+}
+.ekstra-informasjon{
+    border-radius: 40px;
+    margin-top: 15px;
+    background-color: rgb(185, 152, 109) ;
+    padding: 20px;
+}
+
+img{
+    border-radius: 20px;
+}
+.sterktekst{
+    font-size: 14px;
+    font-weight:bold;
+}
+#om-meg{
+    width: 850px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+    background: rgb(222, 183, 66);
+    padding-top:25px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+}

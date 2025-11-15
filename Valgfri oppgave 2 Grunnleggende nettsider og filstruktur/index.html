@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Min nett side</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="meny">
+                    <li><a href="#"><button type="button" class="meny-knapp">Hjem</button></a></li>
+                    <li><a href="#"><button type="button" class="meny-knapp" >Prosjekt</button></a></li>
+                    <li><a href="./forms/form.html"><button class="meny-knapp" >Om meg</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="main-container">
+                <input id="noe" type="text">
+                <input type="button" value="Lag liste" id="minKnapp">
+                <section class="main-content">
+                    <article>
+                        <b id="bold">Min første paragraph</b>
+                        <ul id="unorderlist">
+                            <li>Listed item</li>
+                            <li>sadfjhasdfjksfldkfasildfjiasdjfhgasdfhgasdghedghsoepkjgdssopkadsog</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <img class="papegoye" src="./media/papegoye.png">
+                    </aside>
+                </section>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            document.getElementById("minKnapp").addEventListener("click",minfunksjon);
+
+            function minfunksjon(){
+                for(let i = 0;i <= 5; i++){
+                    const li = document.createElement("li");
+                    li.innerHTML = "Kult    ";
+                    document.getElementById("unorderlist").appendChild(li);
+                }
+            }
+        </script>
+    </body>
+</html>
