@@ -42,10 +42,8 @@ body {
   }
 
   menu {
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    top: 75px;
+    position: sticky;
+
     display: none;
   }
   .menu-icon {
@@ -100,4 +98,21 @@ article {
   padding: 20px;
   max-width: 400px;
   min-width: 120px;
+}
+footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+}
+footer nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: aquamarine;
+  margin-right: 5px;
 }
