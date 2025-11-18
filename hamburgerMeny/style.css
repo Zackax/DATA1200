@@ -116,3 +116,39 @@ footer nav ul li {
   background-color: aquamarine;
   margin-right: 5px;
 }
+.borderbox{
+margin-left:20px;
+display:grid;
+margin-top:40px;
+}
+.boxinfo1, .boxinfo2, .boxinfo3{
+border:1px solid black;
+}
+
+@media (min-width:900px){
+.borderbox{
+width:1100px;
+border:1px solid black;
+height:700px;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 20px;
+row-gap:40px;
+}
+.boxinfo1,.boxinfo2, .boxinfo3{
+height:150px;
+}
+}
+
+@media (max-width:899px){
+.borderbox{
+width:600px;
+border:1px solid black;
+height:700px;
+grid-template-columns: 1fr 1fr;
+column-gap:40px;
+row-gap:20px;
+}
+.boxinfo1,.boxinfo2, .boxinfo3{
+height:125px;
+}
+}
