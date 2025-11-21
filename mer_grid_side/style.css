@@ -1,0 +1,129 @@
+body{
+    margin:10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    grid-gap:20px 20px;
+    grid-template-areas:"header header"
+                        "content content"
+                        "footer footer";                       
+}
+menu{
+    padding: 0px;
+}
+menu ul li{
+    border-radius: 20px;
+    list-style:none;
+    
+}
+li{
+    background-color: rgb(14, 143, 100);
+    padding: 10px;
+    display: inline;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color:aquamarine;
+    grid-area: header;
+    border-radius: 40px;
+    padding: 50px;
+}
+#burger-toggle{
+    display: none;
+}
+
+@media(max-width:900px){
+    header{
+        display: flex;
+        justify-content: left;
+        background-color:aquamarine;
+        grid-area: header;
+        border-radius: 40px;
+        padding: 50px;
+    }
+    main{
+        
+        grid-template-rows: 1fr ;
+        display: grid;
+        grid-gap:10px;
+        background-color:rgb(255, 127, 127);
+        grid-area: content;
+        border-radius: 40px;
+        padding: 50px;
+    }
+    
+    li{
+        
+        background-color: rgb(14, 143, 100);
+        padding: 10px;
+
+        display: block;
+    }
+    menu{
+        
+        top:150px;
+        display: block;        
+        margin:0px;
+        position: absolute;
+    }
+    menu ul li{
+        display: none;
+        justify-content:left;
+        
+    }
+    .icon-menu{
+        width: 40px;
+        height: 40px;
+        background:url(icon.svg);
+        background-size:cover;
+        background-color:steelblue;
+        border-radius: 10px;
+        
+    }
+    #burger-toggle:checked ~ menu ul li{
+        border-collapse: collapse;
+        border:black 1px solid;
+        padding-left: 10px;
+        padding-right: 50px;
+        display: block;
+    }
+}
+
+@media(min-width:900px){
+    main{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap:10px;
+    background-color:rgb(255, 127, 127);
+    grid-area: content;
+    border-radius: 40px;
+    padding: 50px;
+}
+}
+footer{
+    background-color:rgb(148, 127, 255);
+    grid-area: footer;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+}
+ul{
+    padding: 0px;
+}
+nav ul li{
+    list-style:none;
+    padding:0px;
+    margin-left: 20px;
+    display: inline;
+}
+section{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(210, 70, 70);;
+}
+

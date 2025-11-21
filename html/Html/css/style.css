@@ -9,6 +9,7 @@ thead{
 tbody tr:nth-child(odd) {
     background-color: rgb(244, 244, 244);
 }
+
 tbody tr:nth-child(even) td:nth-child(1){
     background-color:blue;
 }
